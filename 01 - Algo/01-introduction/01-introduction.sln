@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variables", "Variables\Variables.csproj", "{46259DC7-4F2E-44F4-9C18-865910926FBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo_01_Variables", "Demo_01_Variables\Demo_01_Variables.csproj", "{46259DC7-4F2E-44F4-9C18-865910926FBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conditions", "Conditions\Conditions.csproj", "{04A4FDA0-D956-4AB3-83C6-DC6493E07C79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo_02_Conditions", "Demo_02_Conditions\Demo_02_Conditions.csproj", "{04A4FDA0-D956-4AB3-83C6-DC6493E07C79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_1_2_Hello_You", "Exo_1_2_Hello_You\Exo_1_2_Hello_You.csproj", "{E567E722-A502-4251-BA7A-2B20439CC7FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exo_1_2_Hello_You", "Exo_1_2_Hello_You\Exo_1_2_Hello_You.csproj", "{E567E722-A502-4251-BA7A-2B20439CC7FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exo_1_3_moyenne", "exo_1_3_moyenne\exo_1_3_moyenne.csproj", "{480EDE30-62AB-4EF6-A978-2F284CF00C23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "exo_1_3_moyenne", "exo_1_3_moyenne\exo_1_3_moyenne.csproj", "{480EDE30-62AB-4EF6-A978-2F284CF00C23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
