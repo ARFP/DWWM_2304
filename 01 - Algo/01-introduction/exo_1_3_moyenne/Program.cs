@@ -27,7 +27,7 @@
 
             moyenne = (nombre1 + nombre2) / 2d;
 
-            Console.WriteLine("La moyenne de " + nombre1 + " et " + nombre2 + " est de " + moyenne);
+            Console.WriteLine("La moyenne de " + nombre1 + " et " + nombre2 + " est de " + moyenne.ToString("#.##"));
 
             Console.ReadLine();
 
