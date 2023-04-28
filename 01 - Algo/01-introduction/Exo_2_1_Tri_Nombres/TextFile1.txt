@@ -1,0 +1,33 @@
+﻿CONSIGNE
+
+	Lire 2 nombres entier A et B puis les afficher dans l’ordre croissant.
+
+VARIABLES
+	
+	a est un entier.
+	b est un entier.
+
+TRAITEMENT
+
+	ECRIRE "Saisissez un premier nombre entier : "
+	LIRE a.
+
+	ECRIRE "Saisissez un second nombre entier : "
+	LIRE b.
+
+	Si a est supérieur à b
+	alors
+		ECRIRE b,"-",a
+
+	Sinon 
+		ECRIRE a,"-",b
+
+	Fin si
+
+FIN TRAITEMENT
+
+
+
+
+
+	

@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exo_1_2_Hello_You", "Exo_1_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "exo_1_3_moyenne", "exo_1_3_moyenne\exo_1_3_moyenne.csproj", "{480EDE30-62AB-4EF6-A978-2F284CF00C23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_2_1_Tri_Nombres", "Exo_2_1_Tri_Nombres\Exo_2_1_Tri_Nombres.csproj", "{A07DE16D-3689-49F1-A202-A8E830307993}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_2_3_Retraite", "Exo_2_3_Retraite\Exo_2_3_Retraite.csproj", "{09E35370-38E7-4DB8-8BF5-1FC4688F9222}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{480EDE30-62AB-4EF6-A978-2F284CF00C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{480EDE30-62AB-4EF6-A978-2F284CF00C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{480EDE30-62AB-4EF6-A978-2F284CF00C23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A07DE16D-3689-49F1-A202-A8E830307993}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07DE16D-3689-49F1-A202-A8E830307993}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07DE16D-3689-49F1-A202-A8E830307993}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07DE16D-3689-49F1-A202-A8E830307993}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09E35370-38E7-4DB8-8BF5-1FC4688F9222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09E35370-38E7-4DB8-8BF5-1FC4688F9222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09E35370-38E7-4DB8-8BF5-1FC4688F9222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09E35370-38E7-4DB8-8BF5-1FC4688F9222}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
