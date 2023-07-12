@@ -1,0 +1,45 @@
+﻿EXERCICE 2.3 : MA RETRAITE
+Lire un nombre A correspondant à un âge (en années).
+Selon l’âge fourni, le programme doit afficher l’un des messages suivants :
+Vous êtes à la retraite depuis X années
+Il vous reste X années avant la retraite.
+C’est le moment de prendre sa retraite.
+La valeur fournie n’est pas un âge valide.
+La retraite est fixée à 67 ans.
+
+
+VARIABLES
+
+	A est un entier
+	ageRetraite est un entier
+	X est un entier
+
+DEBUT TRAITEMENT
+	
+	ageRetraite <-- 64
+
+	ECRIRE "Saisissez l'âge"
+	LIRE A
+
+	SI A = ageRetraite ALORS
+	
+		ECRIRE "C’est le moment de prendre sa retraite."
+
+	SINON SI A > ageRetraite ALORS		
+
+		X <-- A - ageRetraite
+		ECRIRE "Vous êtes à la retraite depuis " , X , " année(s)"	
+
+	SINON SI A >= 0 ALORS
+
+		X <-- ageRetraite - A
+		ECRIRE "Il vous reste " , X , " années avant la retraite.""
+
+	SINON
+
+		ECRIRE "La valeur fournie n’est pas un âge valide."
+
+	FIN SI
+
+
+FIN TRAITEMENT
