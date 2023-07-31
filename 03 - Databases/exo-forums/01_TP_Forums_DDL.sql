@@ -1,3 +1,10 @@
+DROP DATABASE IF EXISTS db_forums;
+
+CREATE DATABASE IF NOT EXISTS db_forums;
+
+use db_forums;
+
+
 CREATE TABLE roles(
    role_id INT AUTO_INCREMENT,
    role_nom VARCHAR(20) NOT NULL,
@@ -42,7 +49,7 @@ CREATE TABLE sujets(
 );
 
 CREATE TABLE messages(
-   message_id VARCHAR(50),
+   message_id INT AUTO_INCREMENT,
    message_contenu TEXT NOT NULL,
    message_date_depot DATETIME NOT NULL,
    message_date_publication DATETIME,
