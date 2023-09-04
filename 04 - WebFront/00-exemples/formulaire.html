@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un formulaire</title>
+</head>
+<body>
+    <h1>Un formulaire</h1>
+    <!-- 
+        action = cible du formulaire (où les données rton transmises )
+        methode : méthode de transmission des données :
+                    GET = via l'url
+                    POST = via le corps de la requête HTTP
+    -->
+    <form action="" method="GET">
+        <div>
+            <label for="nomUtilisateur">Nom : </label>
+            <input value="" type="text" id="nomUtilisateur" name="nom">
+            <!-- type=text : texte normal sans restrictions -->
+        </div>
+        <div>
+            <label for="passUtilisateur">Mot de passe : </label>
+            <input value="" type="password" id="passUtilisateur" name="pass">
+            <!-- type=password : idem que le type=text mais masque les caractères saisis -->
+        </div>
+        <div>
+            <label for="ageUtilisateur">âge : </label>
+            <input type="number" id="ageUtilisateur" name="age">
+            <!-- type=number: accepte uniquement les valeurs numériques -->
+        </div>
+        <div>
+            <label for="dateUtilisateur">Date d'embauche : </label>
+            <input type="date" id="dateUtilisateur" name="date">
+            <!-- type=date : permet de renseigner une date -->
+        </div>
+        <div>
+            <label for="heureUtilisateur">Heure d'embauche : </label>
+            <input type="time" id="heureUtilisateur" name="heure">
+            <!-- type=time : permet de renseigner une heure -->
+        </div>
+        <div>
+            <label for="datetimeUtilisateur">Date et heure d'arrivée : </label>
+            <input type="datetime-local" id="datetimeUtilisateur" name="datetime">
+            <!-- type=datetime-local: permet de renseigner date+heure -->
+        </div>
+        <div>
+            <label for="emailUtilisateur">Email : </label>
+            <input type="email" id="emailUtilisateur" name="mail">
+            <!-- type=email : accepte les chaines de caractères comportant un @ (ne suffit pas pour contrôler la validité d'un email) -->
+        </div>
+        <div>
+            <label for="telUtilisateur">Téléphone : </label>
+            <input type="tel" id="telUtilisateur" name="telephone">
+            <!-- type=tel accepte les numéros de téléphone (ne suffit pas pour contrôler la validité d'un numéro de téléphone) -->
+        </div>
+        <div>
+            <label>Accepter les conditions ?</label>
+            <input value="1" type="checkbox" name="accepterconditions">
+            <!-- type=checkbox : cases à cocher classiques. pevuent être cochées/décochées -->
+        </div>
+        <div>
+            <label>Choisissez l'un des 3 : </label>
+            <input value="4" type="radio" name="validerconditions">
+            <input value="5" type="radio" name="validerconditions">
+            <input value="6" type="radio" name="validerconditions">
+            <!-- type=radio cses à cocher radio (une fois cochée, ne peut plus être décochée) -->
+        </div>
+        <div>
+            <label>Ajouter un commentaire</label>
+            <textarea rows="10" cols="50"></textarea>
+            <!-- textarea = zone de teste multilignes -->
+        </div>
+        <div>
+            <label>Sélectionner une option :</label>
+            <select>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+            <!-- select = liste déroulante -->
+        </div>
+        <div>
+            <label>Commencez à saisir une valeur</label>
+            <input list="mydatalist">
+            <datalist id="mydatalist">
+                <option>chocolat</option>
+                <option>pistache</option>
+                <option>vanille</option>
+                <option>chocolat noir</option>
+            </datalist>
+            <!-- datalist : relié à un input, permet de proposer des chois lors de la saisie dans le champs associé -->
+        </div>
+       <div>
+            <button type="submit">Valider</button>
+            <!-- type=submit : soumet le formulaire au click -->
+       </div>
+    </form>
+
+
+
+</body>
+</html>
