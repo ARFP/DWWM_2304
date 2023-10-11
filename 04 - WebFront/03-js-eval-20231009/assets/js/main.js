@@ -20,10 +20,10 @@ function etatRetraite(){
     let reste;
     if(inputAge.value < ageRetraite){
         reste = ageRetraite - inputAge.value;
-        return "Il vous reste " + reste + " année(s) avant la retraite."
+        return "Il vous reste <span>" + reste + "</span> année(s) avant la retraite."
     }
     else if(inputAge.value > ageRetraite){
-        return "Vous êtes à la retraite depuis " + (inputAge.value - ageRetraite) + " année(s)."
+        return "Vous êtes à la retraite depuis <span>" + (inputAge.value - ageRetraite) + "</span> année(s)."
     }
     else{
         return "Vous prenez votre retraite cette année."
@@ -33,13 +33,13 @@ function etatRetraite(){
 
 btnValider.addEventListener("click", ()=>{
     if(agePrenomValide()){
-        divResultat.innerHTML = `Bonjour ${inputPrenom.value}, votre âge est : ${inputAge.value}.`;
+        divResultat.innerHTML = `Bonjour <span>${inputPrenom.value}</span>, votre âge est : <span>${inputAge.value}</span>.`;
 
         if(estMajeur()){
-            divResultat.innerHTML += "<p>Vous êtes majeur.</p>"
+            divResultat.innerHTML += "<p>Vous êtes <span>majeur</span>.</p>"
         }
         else{
-            divResultat.innerHTML += "<p>Vous êtes mineur.</p>"
+            divResultat.innerHTML += "<p>Vous êtes <span>mineur</span>.</p>"
         }
 
         divResultat.innerHTML += etatRetraite();
