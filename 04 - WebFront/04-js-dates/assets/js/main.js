@@ -20,6 +20,7 @@ buttonCalculer.addEventListener("click",() => {
     let signe = new Signe(dateNaissance); 
 
     if(maDate.estDansLePasse()) {
+
         divResultatDate.innerHTML  = "Vous êtes né le ";
         divResultatDate.innerHTML += dateNaissance.toLocaleDateString("fr");
         divResultatDate.innerHTML += " à ";
@@ -28,6 +29,7 @@ buttonCalculer.addEventListener("click",() => {
         divResultatIntervalle.innerHTML = "Il s'est écoulé "
                                         + maDate.intervalleDates()
                                         + " années depuis votre naissance.";
+                                        
         divResultatSigne.innerHTML = "Votre signe astrologique : " + signe.calculerSigne();
         
     } else {

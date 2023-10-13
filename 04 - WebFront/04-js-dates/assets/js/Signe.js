@@ -1,11 +1,23 @@
 class Signe {
-    static signesAstro = ["Capricorne","Verseau", "Poisson", "Bélier", "Taureau", "Gémeaux", "Cancer", "Lion", "Vierge", "Balance", "Scorpion", "Sagittaire" ]
 
+    /** @var {Array} signesAstro Tableaux des signes astrologiques (Samba avait raison !!!) */
+    static signesAstro = [
+        "Capricorne","Verseau", "Poisson", "Bélier", "Taureau", "Gémeaux", "Cancer", "Lion", "Vierge", "Balance", "Scorpion", "Sagittaire" 
+    ]
+
+    /**
+     * Constructeur
+     * @param {Date} _date une date de naissance
+     */
     constructor(_date) {
         this.dateAnniv = _date;
         this.periodes= this.genererTableau(); 
     }
 
+    /**
+     * Retourne le tableau des périodes correspondant aux signes astrologiques  
+     * @returns {Array} le tableau des périodes correspondant aux signes astrologiques 
+     */
     genererTableau() {
         let annee = this.dateAnniv.getFullYear();
         return [
@@ -24,6 +36,10 @@ class Signe {
         ]
     }
 
+    /**
+     * Retourne le signe astrologique correspondant à la date de naissance
+     * @returns Le signe astrologique correspondant à la date de naissance
+     */
     calculerSigne()
     {
         for (let i = 0; i < this.periodes.length; i++) {
@@ -35,4 +51,5 @@ class Signe {
     }
 
 }
+
 export { Signe };
