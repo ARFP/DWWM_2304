@@ -11,9 +11,14 @@
 <body>
     <div id="app">
         <h1>Vous avez cliqué : {{ nombre }} fois.</h1>
-        <button @click="clickBouton">Ajouter 1</button>      
+        <h2>Le double est égal : {{ nombreDouble }}</h2>
+        <h2>Le quadruple est égal : {{ nombreQuadruple }}</h2>
+        <button @click="clickBouton">Ajouter 1</button>     
+        <p v-if="nombre >= 10">Bonjour {{ prenomMajuscule }}, vous avez cliqué + de 10 fois !</p> 
+        <p v-else-if="nombre < 5">il faut cliquer encore</p>
+        <p v-else>V ELSE</p>
     </div>
-    <div>
+    <div id="pasVueJS">
         <h1>Vous avez cliqué : <span id="resultat">0</span> fois.</h1>
         <button id="bouton">Ajouter 1</button> 
     </div>
