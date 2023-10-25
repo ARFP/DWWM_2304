@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code postaux (VUE-JS)</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/main-vue.js" type="module"></script>
+</head>
+<body>
+    <div id="toto">
+        <h1>Code postaux (VueJS)</h1>
+        <label for="inputSearch">Code postal ou ville</label>
+        <input type="search" list="zipCodesList" v-model="zipCode" placeholder="Entrez un CP ou une ville"> 
+        <button @click="validerClic">Valider</button>
+        <datalist id="zipCodesList">
+            <option v-for="zipCode of zipCodes" :value="zipCode.codePostal">{{ zipCode.nomCommune }}</option>
+        </datalist>
+        <div v-if="result.length > 0">
+            <p v-for="city of result">
+                Nom de la ville {{ city.nomCommune }}. 
+                Code postal: {{ city.codePostal }}</p>
+        </div>
+        <div v-else>Pas de résultat !</div>
+    </div>
+</body>
+</html>
