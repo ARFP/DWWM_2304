@@ -1,0 +1,53 @@
+:root {
+    --base-1: #E9FFF9;
+    --base-2: #1D3354;
+    --base-3: #467599;
+    --base-4: #467599;
+    --base-5: #9ED8DB;
+    --base-6: #E9FFF9;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--base-1);
+    color: var(--base-2)
+}
+
+.text-info {
+    color:var(--base-5);
+    background-color: var(--base-2);
+    padding: 3px 5px;
+    margin-left: 2px;
+}
+
+.text-info:first-child {
+    margin-left: 10px;
+}
+
+#country-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    width: 800px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+#country-filter h2 {
+    width: 100%;
+}
+
+.country {
+    color:var(--base-2);
+    background-color: var(--base-5);
+    width: 140px;
+}
+
+.country input[type="checkbox"] {
+    margin: 5px 15px;
+}
+
+th, td {
+    padding: 5px;
+    background-color: var(--base-5);
+}
