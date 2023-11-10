@@ -35,6 +35,8 @@ console.log(results);
 // Supprimer la ville dont le nom est "Marseille"
 fonctionSupprimerMarseille = (ville) => ville.city_name !== "Marseille";
 
+
+// retourne toutes les villes sauf "Marseille"
 results = villes.filter(fonctionSupprimerMarseille);
 
 console.log(results);
@@ -43,7 +45,7 @@ console.log(results);
 let pays = [];
 
 let fonctionObtenirListePays = ville => ville.country_code;
-pays = villes.map(fonctionObtenirListePays);
+pays = villes.map(fonctionObtenirListePays); // pays = ["BE", "FR"]
 pays = new Set(pays); // crée une collection à partir du tableau fourni en paramètre. Les élément en double sont supprimés.
 
 console.log(pays);
