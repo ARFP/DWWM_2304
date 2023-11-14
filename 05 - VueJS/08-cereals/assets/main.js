@@ -18,6 +18,7 @@ const app = {
         this.cereals = this.cereals.map(cereal => new Cereal(cereal));
         console.log(this.cereals);
         this.cerealsSource = [...this.cereals];
+        // this.cerealsSource = Array.from(this.cereals); // equivalent de la ligne précédente
     },
     methods: {
         trier(event) {
