@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #111;
+    --color2: #222;
+    --color3: #333;
+    --color4: #444;
+    --color5: #664;
+    --color6: white;
+    --color-text: #FFFFFFCC;
+    --color-text-id: yellow;
+    --color-title: yellowgreen;
+    --nutriscoreA: darkgreen;
+    --nutriscoreB: #009900CC;
+    --nutriscoreC: #CCCC00CC;
+    --nutriscoreD: #CC6600CC;
+    --nutriscoreE: #CC0000CC;
+
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--color1);
+    color: var(--color-text);
+}
+
+main{
+    display: flex;
+    justify-content: center ;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin-left: 200px;
+    color: var(--color-title);
+}
+
+.recherche {
+ background-color: var(--color3);
+ border-radius: 3px;
+}
+
+.recherche input {
+    border: 0;
+    background-color: var(--color3);
+    padding: 15px 0;
+    color: var(--color-text);
+}
+
+
+.identifiant {
+    color: var(--color-text-id);
+    background-color: var(--color3);
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,th {
+    padding: 5px;
+}
+
+td {
+    text-align: center;
+}
+
+#name,.name {
+    text-align: left;
+}
+
+th {
+    background-color:   var(--color4);
+    color: var(--color-title);
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background-color: var(--color5);
+}
+
+.A {
+    background-color: var(--nutriscoreA);
+}
+
+.B {
+    background-color: var(--nutriscoreB);
+}
+
+.C {
+    background-color: var(--nutriscoreC);
+}
+
+.D {
+    background-color: var(--nutriscoreD);
+}
+
+.E {
+    background-color: var(--nutriscoreE);
+}
+
+.delete {
+    background-color: var(--color3);
+}
+
+.A,.B,.C,.D,.E,.delete {
+    text-align: center;
+}
+

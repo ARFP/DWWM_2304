@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./assets/main.js" type="module"></script>
+    <link href="./assets/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Cereals</h1>
+            <fieldset class="recherche">
+                <legend>Rechercher</legend>
+                <input type="search" placeholder="Nom du céréale" v-model="search" @input="filterCereals">
+                {{search}}
+            </fieldset>
+        </header>
+        
+        <main>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th id="id" @click="trier">ID</th>
+                        <th id="name" @click="trier">nom</th>
+                        <th id="calories" @click="trier">Calories</th>
+                        <th>PrOTeïNeS</th>
+                        <th>sel</th>
+                        <th>fibres</th>
+                        <th>glucides</th>
+                        <th>sucre</th>
+                        <th>potassium</th>
+                        <th>vitamines</th>
+                        <th>évaluation</th>
+                        <th>ns</th>
+                        <th>del</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="cereal of cereals">
+                        <td class="identifiant">{{ cereal.id }}</td>
+                        <td class="name">{{ cereal.name }}</td>
+                        <td>{{ cereal.calories }}</td>
+                        <td>{{ cereal.protein }}</td>
+                        <td>{{ cereal.sodium }}</td>
+                        <td>{{ cereal.fiber }}</td>
+                        <td>{{ cereal.carbo }}</td>
+                        <td>{{ cereal.sugars }}</td>
+                        <td>{{ cereal.potass }}</td>
+                        <td>{{ cereal.vitamins }}</td>
+                        <td>{{ cereal.rating }}</td>
+                        <td :class="cereal.ns">{{ cereal.ns }}</td>
+                        <td class="delete">❌</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+
+    </div>
+</body>
+</html>
