@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+table {
+    
+}
+
+
+td {
+    transform: skew(-30deg);
+}
+
+tbody tr {
+    background-color: aqua;
+}
+
+tbody tr:nth-child(even) {
+    background-color: pink;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: greenyellow;
+}
+
+tbody tr:first-child {
+    background-color: violet;
+}
+tbody tr:last-child {
+    background-color: lightgrey;
+}
+
+.titleValid {
+    color: green;
+}
+
+input[type="search"]:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+input:focus {
+    border: 10px solid yellow;
+}

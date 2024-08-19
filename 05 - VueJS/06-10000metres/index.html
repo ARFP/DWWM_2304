@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./assets/main.js" type="module"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Résultats de la course</h1>
+        <main>
+            <span class="text-info">{{ numberOfParticipants }} participants</span>
+            <span class="text-info" v-if="numberOfParticipants > 0">Gagnant: {{ winner.firstName }} {{ winner.lastName }}</span>
+
+            <section id="country-filter">
+                <h2>Filtrer</h2>
+                <span class="country" v-for="country of countries">
+                    <input type="checkbox" :value="country" v-model="selectedCountries" @change="filterCountries">
+                    <label>{{ country }}</label>
+                </span>
+            </section>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pays</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Temps final</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="participant of participants">
+                        <td>{{ participant.country }}</td>
+                        <td>{{ participant.lastName }}</td>
+                        <td>{{ participant.firstName }}</td>
+                        <td>{{ participant.minutes }}min{{ participant.seconds }}s</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+    </div>
+</body>
+</html>

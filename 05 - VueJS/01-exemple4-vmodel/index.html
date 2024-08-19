@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS v-model</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./main.js" type="module"></script>
+    <style>
+        label {
+            display: inline-block;
+            width: 120px;
+        }
+        div {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main id="app">
+        <h1 :style="{ 'color': couleur }">Formulaire de contact</h1>
+        <div>
+            <label>Nom: </label>
+            <!-- text, number, email, tel, date, datetime, url, password -->
+            <input type="email" v-model="nom"> {{ nom }}
+        </div>
+        <div>
+            <label>Message: </label>
+            <textarea v-model="message"></textarea> <pre>{{ message }}</pre>
+        </div>
+        <div>
+            <label>Catégorie</label>
+            <select v-model="categorie">
+                <option>Catégorie 1</option>
+                <option value="toto">Catégorie 2</option>
+                <option>Catégorie 3</option>
+            </select> {{ categorie }}
+        </div>
+        <div>
+            <label>Catégories</label>
+            <select v-model="categories" multiple>
+                <option>Catégorie 1</option>
+                <option value="toto">Catégorie 2</option>
+                <option>Catégorie 3</option>
+            </select> {{ categories }}
+        </div>
+        <div>
+            <label>Destinataires</label><br>
+            <input value="riri" type="checkbox" v-model="destinataires"> Riri <br>
+            <input value="fifi" type="checkbox" v-model="destinataires"> Fifi <br>
+            <input value="loulou" type="checkbox" v-model="destinataires"> Loulou <br>
+            {{ destinataires }}
+        </div>
+        <div>
+            <label>Réponse demandée ?</label><br>
+            <input value="oui" type="radio" name="ouinon" v-model="ouinon" @change="afficherConsole"> Oui <br>
+            <input value="non" type="radio" name="ouinon" v-model="ouinon" @change="afficherConsole"> Non <br>
+            <input value="osef" type="radio" name="ouinon" v-model="ouinon" @change="afficherConsole"> OSEF <br>
+            {{ ouinon }}
+        </div>
+        <div>
+            <label>Votre don</label>
+            <input type="range" min="5" max="100" v-model="don"> {{ don }}
+        </div>
+        
+        <div>
+            <label>Couleur de l'enveloppe</label>
+            <input type="color" v-model="couleur"> {{ couleur }}
+        </div>
+        
+        <div>
+            <label>Couleur de l'enveloppe</label>
+            <input type="datetime-local" v-model="date"> {{ date }}
+        </div>
+
+        <button @click="afficherConsole">Valider</button>
+    </main>
+</body>
+</html>

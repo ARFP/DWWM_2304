@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --couleur-primaire : blue;
+    --couleur-secondaire : blue;
+    --couleur-tertiaire : beige;
+}
+
+body{
+    font-family: Verdana, Geneva, sans-serif;
+    /* display: flex;
+    justify-content: center; */
+}
+main{
+    width: 800px;
+    padding : 10px;
+    margin: auto;
+    
+}
+
+main, input, button{
+    border:solid var(--couleur-primaire) 1px;
+}
+
+input, button{
+    padding: 10px 5px ;
+}
+
+label, input, button{
+    margin-right: 10px;
+}
+
+button{
+    color: var(--couleur-secondaire);
+    background-color: var(--couleur-tertiaire);
+}
+
+span{
+    color: var(--couleur-primaire);
+    font-weight: bold;
+}
+
+h1{
+    margin: 0 auto 10px ;
+}

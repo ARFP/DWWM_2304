@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits</title>
+    <link rel="stylesheet" href="./assets/css/style.css"></link>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./assets/js/main.js" type="module"></script>
+</head>
+<body>
+    <div id="app">
+        <h2>{{ product }}</h2>
+        <ul>
+            <li>
+                Prix HT: 
+                <input type="number" v-model="price">
+            </li>
+            <li>Taxe: {{ tax }}</li>
+            <li>Prix TTC: {{ fullPrice }} </li>
+            <li>Prix Arrondi: {{ roundPrice }} </li>
+        </ul>
+    </div>
+</body>
+</html>

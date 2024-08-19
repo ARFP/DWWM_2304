@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple</title>
+    <link rel="stylesheet" href="./assets/css/style.css"></link>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./assets/js/main.js" type="module"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Vous avez cliqué : {{ nombre }} fois.</h1>
+        <h2>Le double est égal : {{ nombreDouble }}</h2>
+        <h2>Le quadruple est égal : {{ nombreQuadruple }}</h2>
+        <button @click="clickBouton">Ajouter 1</button>     
+        <p v-if="nombre >= 10">Bonjour {{ prenomMajuscule }}, vous avez cliqué + de 10 fois !</p> 
+        <p v-else-if="nombre < 5">il faut cliquer encore</p>
+        <p v-else>Il faut encore cliquer un peu...</p>
+    </div>
+    <div id="pasVueJS">
+        <h1>Vous avez cliqué : <span id="resultat">0</span> fois.</h1>
+        <button id="bouton">Ajouter 1</button> 
+    </div>
+</body>
+</html>

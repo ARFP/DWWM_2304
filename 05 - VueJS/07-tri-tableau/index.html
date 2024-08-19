@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./main.js" type="module"></script>
+    <style>
+        table, th,td {
+            border: 1px solid red;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        th {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>Villes</h1>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th id="city_id" @click="trier">ID</th>
+                        <th id="city_name" @click="trier">Nom</th>
+                        <th id="country_code" @click="">Pays</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="ville of villes">
+                        <td>{{ ville.city_id }}</td>
+                        <td>{{ ville.city_name }}</td>
+                        <td>{{ ville.country_code }}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+    </div>
+</body>
+</html>
